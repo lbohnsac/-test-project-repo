@@ -2,6 +2,7 @@ apiVersion: authorization.openshift.io/v1
 kind: ClusterRoleBinding
 metadata:
   name: deine-mama
+  namespace: teschdproj
 roleRef:
   name: cluster-admin
 subjects:
