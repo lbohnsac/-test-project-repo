@@ -1,0 +1,11 @@
+apiVersion: authorization.openshift.io/v1
+kind: ClusterRoleBinding
+metadata:
+  name: deine-mama
+roleRef:
+  name: cluster-admin
+subjects:
+  - kind: ServiceAccount
+    name: deine-mama
+userNames:
+  - system:serviceaccount:cluster-operations:deine-mama
